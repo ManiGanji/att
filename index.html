@@ -7,7 +7,6 @@
     <!-- External Fonts -->
     <link href="./index_files/css2" rel="stylesheet">
     <style>
-       
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -19,8 +18,6 @@
             align-items: center;
             min-height: 100vh;
         }
-
-        
         .container {
             background-color: #ffffff;
             padding: 30px;
@@ -29,20 +26,17 @@
             max-width: 500px;
             width: 100%;
         }
-
         h1 {
             text-align: center;
             font-weight: 600;
             margin-bottom: 20px;
             color: #4facfe;
         }
-
         label {
             font-weight: 600;
             display: block;
             margin: 10px 0 5px;
         }
-
         input {
             width: 100%;
             padding: 8px 10px;
@@ -52,7 +46,6 @@
             box-sizing: border-box;
             font-size: 14px;
         }
-
         button {
             background-color: #4facfe;
             color: #fff;
@@ -65,12 +58,16 @@
             width: 100%;
             transition: background-color 0.3s;
         }
-
         button:hover {
             background-color: #3a8ad3;
         }
-
-       
+        .attendance-btn {
+            background-color: #28a745;
+            margin-top: 10px;
+        }
+        button.attendance-btn:hover {
+            background-color: #218838;
+        }
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
@@ -102,6 +99,9 @@
 
             <button type="submit">Register</button>
         </form>
+        
+        <!-- Button to navigate to attendance page -->
+        <button class="attendance-btn" onclick="window.location.href=&#39;attendance.php&#39;;">Mark Attendance</button>
     </div>
 
 
